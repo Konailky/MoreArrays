@@ -24,7 +24,7 @@ public class ArrList
         System.out.println(list.size());
     }
     
-    public void printLIst(){
+    public void printList(){
         System.out.println("Your shopping list contains:");
         System.out.println();
         for(Object i : list){
