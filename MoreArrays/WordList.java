@@ -11,15 +11,15 @@ import java.util.List;
 
 public class WordList
 {
-    private ArrayList<String> myList;// Contains Strings made up of letters
+    private ArrayList<String> myList;// Contains Strings made up of letters    
     
     public WordList(){
-        list = new ArrayList<String>();
-        list.add("cat");
-        list.add("mouse");
-        list.add("frog");
-        list.add("dog");
-        list.add("dog");
+        myList = new ArrayList<String>();
+        myList.add("cat");
+        myList.add("mouse");
+        myList.add("frog");
+        myList.add("dog");
+        myList.add("dog");
     }
     
     //Postcondition: returns the number of words in this WordList that are exactly (len) letters long.
@@ -33,12 +33,13 @@ public class WordList
         return count;
     }
 
-    //Postocndition: all words that are exactly (len) letters long have been removed form this WordList, with the order of the remaining words unchanged. 
+    //Postcondition: all words that are exactly (len) letters long have been removed form this WordList, with the order of the remaining words unchanged. 
     public void removeWordsOfLength(int len){
-        for(int i = 0; i < ; i++){
-            if (  == len){
-                list.remove(i);
+       for (int i = myList.size()-1; i >= 0 ; i--){
+           if ( myList.get(i).length() == len){
+               myList.remove(i);
             }
+           
         }
     }
 }
