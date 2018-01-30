@@ -8,14 +8,14 @@
  */
 public class Sort
 {
-    int[] array = {5,6,7,2,1,3,8,4};
+    int[] array = {5,6,7,2,1,3,3,8,4};
     boolean check = false;
 
     public Sort(){//Runs everything.
         while(check == false){
-            bubbleSort();
-            //insetSort();
-            //selectSort();
+            //bubbleSort();
+            //insertSort();
+            selectSort();
             if (check()){
                 check = true;
             }
@@ -43,15 +43,24 @@ public class Sort
     }
 
     public  void insertSort(){
-        int max = array[array.length-1];
-       // for (int i = array.length-1; i >0 ; i--){
-        
-        
-     
+        for (int i = array.length-1; i >0 ; i--){
+            for(int index = i-1; index >= 0; index--){
+                if (array[index] > array[i]){
+                    int temp = array[index];
+                    array[index] = array[i];
+                    array[i] = temp;
+                }
+            }
+
+        }
     }
 
-
     public  void selectSort(){
+        for (int i = array.length-1; i>=0; i --){
+            for( int index = ; index < array.length-1; index++){
+                int max = array[i];
+            }
+        }
     }
 }
 
