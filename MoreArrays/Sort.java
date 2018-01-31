@@ -56,11 +56,16 @@ public class Sort
     }
 
     public  void selectSort(){
-        for (int i = array.length-1; i>=0; i --){
-            for( int index = ; index < array.length-1; index++){
-                int max = array[i];
+        for (int i = 0; i <  array.length; i ++){
+            for (int x = i ; x < array.length; x++){
+                if (array[x] < array[i]){
+                    int temp = array[i];
+                    array[i] = array[x];
+                    array[x] = temp;
+                }
             }
         }
+
     }
 }
 
